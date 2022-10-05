@@ -1,4 +1,5 @@
-## Demo : https://user-images.githubusercontent.com/69457494/194152147-ac4aea14-7765-45bc-abbf-1aa76ee7c95a.mp4
+## Demo :
+https://user-images.githubusercontent.com/69457494/194152147-ac4aea14-7765-45bc-abbf-1aa76ee7c95a.mp4
 # About This Project
 This project is a simple e-commerce website powered by Angular on the frontend and Spring Boot for the backend.
 # Technologies :
