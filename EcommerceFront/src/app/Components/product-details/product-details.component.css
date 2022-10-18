@@ -34,6 +34,9 @@ option{
     color: #fff;
     height: 50px;
 }
+.btn-group .btn:hover{
+    opacity: 0.8;
+}
 .alert{
     display: none;
 }

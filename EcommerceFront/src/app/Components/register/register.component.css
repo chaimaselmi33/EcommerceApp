@@ -1,0 +1,75 @@
+.container{
+    background: #f6f6f6;
+}
+.title{
+    font-size: 16px;
+    font-family: 'PT Sans Caption', sans-serif;
+    position: relative;
+    width: 300px;
+    background: #f6f6f6;
+    text-align: center;
+    top: 27px;
+    z-index: 10000;
+}
+label{
+    font-family: 'Quicksand', sans-serif;
+}
+form{
+    margin: 0px 200px;
+}
+input{
+background: #f6f6f6 !important;
+border-bottom: black;
+border-radius:0px ;
+border-color:transparent;
+border-bottom: 1px solid black;
+} 
+input:focus{
+    outline-style: none !important;
+    border-style: none !important;
+    border-bottom: 1px solid black !important;
+    transition: 7s ease-out;
+}
+input:focus-within::after{
+    outline-style: none !important;
+    border-style: none !important;
+    border-bottom: 1px solid rgb(126, 65, 65) !important;
+}
+hr{
+    color: #897856;
+}
+.submit{
+    font-size: 16px;
+    width: 300px;
+    border-radius: 1px;
+    background: black;
+    color: #fff;
+    height: 50px;
+}
+.submit:hover{
+    opacity: 0.8;
+}
+.checkout-btn{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px 0px 0px;
+    background: black;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 2px;
+} 
+.checkout-btn:hover{
+    opacity: .8;
+}
+.pay-opt{
+    cursor: pointer;
+    padding: 0px;
+    width: 170px !important;
+    height: 70px;
+    border: 1px solid #008dff;
+    border-radius: 10px;
+}
+.order-title{
+    font-family: 'PT Sans Caption', sans-serif;
+}
