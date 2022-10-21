@@ -30,6 +30,12 @@ public class ProductController {
 	@Autowired
 	ProductRepository productRepo;
 	
+	@GetMapping("/hello")
+	public String welcome()
+	{
+        return "hello world";
+	}
+	
 	@GetMapping("/get-products")
 	public List<Product> getProducts()
 	{
