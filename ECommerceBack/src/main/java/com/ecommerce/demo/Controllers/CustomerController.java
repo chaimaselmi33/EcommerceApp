@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ecommerce.demo.dao.CustomerRepository;
 import com.ecommerce.demo.models.Customer;
 
+<<<<<<< HEAD
 @CrossOrigin( origins="*")
 @RestController
 @RequestMapping("customer")
@@ -22,4 +23,19 @@ public class CustomerController {
 	Customer addCustomer( @RequestBody Customer c) {
 		return custRepo.save(c);
 	}
+=======
+@CrossOrigin(origins="*")
+@RestController
+@RequestMapping("/customer")
+public class CustomerController {
+	@Autowired
+	CustomerRepository customerRepo;
+
+	@PostMapping("/add-customer")
+	Customer saveCustomer(@RequestBody Customer c)
+	{
+		return customerRepo.save(c);
+	}
+	
+>>>>>>> main
 }

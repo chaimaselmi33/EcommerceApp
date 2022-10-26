@@ -13,9 +13,11 @@ import { CartComponent } from './Components/cart/cart.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WishListComponent } from './Components/wish-list/wish-list.component';
-import { RegisterComponent } from './Components/register/register.component'
+import { RegisterComponent } from './Components/register/register.component';
+import { PasswordPatternDirective } from './directives/password-pattern.directive';
+import { MatchPasswordDirective } from './directives/match-password.directive';
+import { PaymentComponent } from './Components/payment/payment.component'
 
 
 @NgModule({
@@ -29,7 +31,10 @@ import { RegisterComponent } from './Components/register/register.component'
     FooterComponent,
     HomeComponent,
     WishListComponent,
-    RegisterComponent
+    RegisterComponent,
+    PasswordPatternDirective,
+    MatchPasswordDirective,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

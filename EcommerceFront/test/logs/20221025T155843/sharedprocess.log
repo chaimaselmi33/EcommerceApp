@@ -1,0 +1,2 @@
+[2022-10-25 15:58:49.300] [sharedprocess] [info] Starting worker process with pid 12308 (type: fileWatcher, window: 1).
+[2022-10-25 15:58:49.804] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles

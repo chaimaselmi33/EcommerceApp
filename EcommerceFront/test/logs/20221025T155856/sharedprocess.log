@@ -1,0 +1,9 @@
+[2022-10-25 15:58:59.368] [sharedprocess] [info] Starting worker process with pid 11392 (type: fileWatcher, window: 1).
+[2022-10-25 15:58:59.898] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2022-10-25 15:59:13.430] [sharedprocess] [info] Worker process with pid 11392 terminated normally (type: fileWatcher, window: 1).
+[2022-10-25 15:59:14.769] [sharedprocess] [info] Starting worker process with pid 17892 (type: fileWatcher, window: 1).
+[2022-10-25 18:59:03.115] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-10-25 20:43:08.571] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-10-25 20:43:11.942] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
+[2022-10-25 23:04:55.810] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-10-25 23:04:59.327] [sharedprocess] [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {"name":"Offline"}

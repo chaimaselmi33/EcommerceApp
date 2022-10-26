@@ -1,0 +1,19 @@
+[2022-10-25 17:04:36.603] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 17:59:40.506] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 18:01:09.493] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 18:59:18.399] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 20:43:15.730] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 20:44:57.679] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 20:45:03.466] [renderer1] [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+[2022-10-25 20:48:26.710] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 20:49:55.710] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 20:59:19.690] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 21:00:49.701] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 21:03:29.717] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 21:06:44.673] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 23:04:59.327] [renderer1] [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+[2022-10-25 23:05:00.839] [renderer1] [warning] UNRESPONSIVE extension host: 'ms-vscode-remote.remote-wsl-recommender' took 0% of 7091453.643ms, saved PROFILE here: 'file:///c%3A/Users/PC/AppData/Local/Temp/exthost-b4231f.cpuprofile' [{"id":"ms-vscode-remote.remote-wsl-recommender","total":5316,"percentage":0},{"id":"program","total":105958,"percentage":0},{"id":"self","total":-1498596275,"percentage":-21},{"id":"vscode.git","total":1318,"percentage":0},{"id":"vscode.typescript-language-features","total":2349,"percentage":0}]
+[2022-10-25 23:05:13.666] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 23:06:42.881] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 23:10:13.877] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW
+[2022-10-25 23:11:42.870] [renderer1] [info] UNRESPONSIVE extension host: starting to profile NOW

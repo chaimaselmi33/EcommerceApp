@@ -1,0 +1,225 @@
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-9 mt-2">
+            <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" [appMatchPassword]="['password','confirmPassword']">
+                <h3 class="mx-auto details-title">Customer details</h3>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group mb-1">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" required name="firstName" #fn="ngModel" ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div class="text-danger error-msg" *ngIf="fn.invalid && fn.touched">
+                                <div *ngIf="fn.errors?.['required']">
+                                    Field required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control" required email name="email" #email="ngModel"
+                                ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div class="text-danger" *ngIf="email.invalid && email.touched">
+                                <div *ngIf="email.errors?.['required']">
+                                    Field required
+                                </div>
+                                <div *ngIf="email.errors?.['email']">
+                                    Enter a valid email address
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" required name="lasttName" #ln="ngModel" ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div class="text-danger" *ngIf="ln.invalid && ln.touched">
+                                <div *ngIf="ln.errors?.['required']">
+                                    Field required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" required name="phoneNumber" #phoneNum="ngModel"
+                                ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div class="text-danger" *ngIf="phoneNum.invalid && phoneNum.touched">
+                                <div *ngIf="phoneNum.errors?.['required']">
+                                    Field required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mx-auto details-title">Bill details</h3>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label">Address</label>
+                            <input type="text" class="form-control" required name="address" #ad="ngModel" ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div class="text-danger" *ngIf="ad.invalid && ad.touched">
+                                <div class="text-danger" *ngIf="ad.errors?.['required']">
+                                    Field required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Town</label>
+                            <input type="text" class="form-control" required name="town" #to="ngModel" ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div *ngIf="to.invalid && to.touched">
+                                <div class="text-danger" *ngIf="to.errors?.['required']">
+                                    Field required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label">Zip Code</label>
+                            <input type="text" class="form-control" required name="zipCode" #zip="ngModel" ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div class="text-danger" *ngIf="zip.invalid && zip.touched">
+                                <div *ngIf="zip.errors?.['required']">
+                                    Field required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mx-auto details-title">Account details</h3>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label">UserName</label>
+                            <input type="text" class="form-control" required minlength="3" name="userName" #un="ngModel"
+                                ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div *ngIf="un.invalid && un.touched">
+                                <div class="text-danger" *ngIf="un.errors?.['required']">
+                                    Field required
+                                </div>
+                                <div class="text-danger" *ngIf="un.errors?.['minlength']">
+                                    Username must be at least 3 characters.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="form-label">PassWord</label>
+                            <input type="password" class="form-control" required minlength="8" appPasswordPattern
+                                name="password" #ps="ngModel" ngModel>
+                        </div>
+                        <div class="error-msg">
+                            <div *ngIf="ps.invalid && ps.touched">
+                                <div class="text-danger" *ngIf="ps.errors?.['required']">
+                                    Field required
+                                </div>
+                                <div class="text-danger" *ngIf="ps.errors?.['minlength']">
+                                    Password must be at least 8 characters.
+                                </div>
+                                <div class="text-danger" *ngIf="ps.errors?.['invalidPassword']">
+                                    Password should have at least 1 uppercase letter, 1 lowercase letter and 1 number
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" name="confirmPassword"
+                                    #confirmPassword="ngModel" required ngModel />
+                            </div>
+                            <div class="error-msg">
+                                <div class="text-danger"
+                                    *ngIf="(confirmPassword.touched) &&confirmPassword.errors?.['required']">
+                                    Confirm Password is required
+                                </div>
+                                <div class="text-danger"
+                                    *ngIf="confirmPassword.touched && confirmPassword.errors?.['passwordMismatch']">
+                                    Passwords does not match
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="col-3 px-0">
+            <h3 class="pl-3">Order Summary</h3>
+            <table class="table m-0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h5>SubTotal</h5>
+                        </td>
+                        <td class="text-right">137</td>
+                    </tr>
+                    <tr style="background: #eeeeee7b;">
+                        <td>
+                            <h5>Shipping</h5>
+                        </td>
+                        <td class="text-right">7</td>
+                    </tr>
+                    <tr style="background: #EEEEEE;">
+                        <td>
+                            <h5>Total</h5>
+                        </td>
+                        <td class="text-right">140</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form>
+                <div class=" py-2 d-flex justify-content-between">
+                    <input type="radio" name="payment-mode">
+                    <img src="../../../assets/Images/virement.png" width="150" height="70">
+                </div>
+            </form>
+            <button class="btn submit-btn" style="width:100%">Pass Order</button>
+        </div>
+    </div>
+</div>
+
+
+<!--<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+    <input type="text" class="form-control"
+    required maxlength="4" minlength="2"
+    [(ngModel)]="c.fn" name="fn" #fn="ngModel">
+    <div *ngIf="fn.invalid && (fn.dirty || fn.touched)" style="color:red" class="error">
+        <div *ngIf="fn.errors?.['required']">
+            First Name is required
+        </div>
+        <div *ngIf="fn.errors?.['minlength']">
+            Name must be at least 2 characters long.
+        </div>
+    </div>
+  
+  <input type="text" class="form-control"
+    required maxlength="4" minlength="2"
+    [(ngModel)]="c.ln" name="ln" #ln="ngModel">
+
+  <div *ngIf="ln.invalid && (ln.touched)"
+  style="color:rgb(100, 17, 17)">
+    last name is required.
+  </div>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
+-->
