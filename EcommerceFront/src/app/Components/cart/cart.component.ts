@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderItem } from 'src/app/Models/orderItem';
-import { OrderService } from 'src/app/Services/order.service';
 import { SharedService } from 'src/app/Services/shared.service';
 
 @Component({
@@ -19,7 +18,7 @@ export class CartComponent implements OnInit {
   price!:number;
   isEmpty!: Boolean;
 
-  constructor(private shared : SharedService, private orderService : OrderService) { }
+  constructor(private shared : SharedService) { }
 
   ngOnInit(): void {
     this.orderItems = this.shared.getOrderItems();
@@ -63,7 +62,8 @@ export class CartComponent implements OnInit {
   
   sumSubTotal(){
     this.subTotalSum = this.SubTotalArray.reduce((prEle,cuEle) => prEle+cuEle, 0);
-    console.log("Sum",this.subTotalSum);
+    this.shared.setSubTotalSum(this.subTotalSum);
+    //console.log("Sum",this.subTotalSum);
   }
   computeTotal(){
     this.Total = this.ShippingPrice + this.subTotalSum;
@@ -79,14 +79,6 @@ export class CartComponent implements OnInit {
    // alert("not empty");
     this.isEmpty = false;
     }
-  }
-
-  postOrder(){
-    console.log("check",this.orderItems);
-    this.orderItems.forEach(o => {o.product.image = ''});
-    this.orderService.submitOrder(this.orderItems).subscribe(
-      res => console.log(res)
-    );
   }
   
 }

@@ -1,0 +1,7 @@
+[2022-10-25T13:58:47.990Z] Log level: Info
+[2022-10-25T13:58:48.000Z] [info] Validating found git in: C:\Program Files\Git\cmd\git.exe
+[2022-10-25T13:58:48.020Z] [info] Validating found git in: C:\Program Files (x86)\Git\cmd\git.exe
+[2022-10-25T13:58:48.022Z] [info] Validating found git in: C:\Program Files\Git\cmd\git.exe
+[2022-10-25T13:58:48.024Z] [info] Validating found git in: C:\Users\PC\AppData\Local\Programs\Git\cmd\git.exe
+[2022-10-25T13:58:48.056Z] [info] Validating found git in: D:\Program Files\Git\cmd\git.exe
+[2022-10-25T13:58:48.289Z] [info] Using git 2.37.3.windows.1 from D:\Program Files\Git\cmd\git.exe
