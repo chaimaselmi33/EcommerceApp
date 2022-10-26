@@ -1,0 +1,54 @@
+{
+    "telemetry.machineId": "c9d3b6105325ada261b0e92739cb8419c2ebd1b8aae6e33066f5f11b8bf83908",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///c%3A/Users/PC/TRY2/Ecommerce/EcommerceFront"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1666706323764"
+            }
+        ]
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "windowSplash": {
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1e1e1e",
+            "editorBackground": "#1e1e1e",
+            "titleBarBackground": "#3c3c3c",
+            "activityBarBackground": "#333333",
+            "sideBarBackground": "#252526",
+            "statusBarBackground": "#007acc",
+            "statusBarNoFolderBackground": "#68217a"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 30,
+            "activityBarWidth": 48,
+            "sideBarWidth": 256,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///c%3A/Users/PC/TRY2/Ecommerce/EcommerceFront",
+            "backupPath": "C:\\Users\\PC\\TRY2\\Ecommerce\\EcommerceFront\\test\\Backups\\a4522b780e06ec4828b15ccaf6880add",
+            "uiState": {
+                "mode": 0,
+                "x": 256,
+                "y": 48,
+                "width": 1024,
+                "height": 768
+            }
+        },
+        "openedWindows": []
+    }
+}
