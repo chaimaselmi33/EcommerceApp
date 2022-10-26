@@ -29,14 +29,9 @@ import com.ecommerce.demo.models.Product;
 public class ProductController {
 	@Autowired
 	ProductRepository productRepo;
-	
-<<<<<<< HEAD
-	@GetMapping("/welcome")
-	public String hello()
-=======
+
 	@GetMapping("/hello")
 	public String welcome()
->>>>>>> main
 	{
         return "hello world";
 	}
